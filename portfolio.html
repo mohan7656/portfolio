@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./portfolio.css">
+</head>
+<body>
+    <main>
+        <div id="main-container">
+            <section id="main">
+                    <nav id="nav-bar">
+                        <div id="nav-logo">
+                            <img src="./logo/M-logo.png" alt="">
+                        </div>
+
+                        <ul id="nav-links">
+                            <li><a href="#main">Home</a></li>
+                            <li><a href="#services">What I Do</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+            </section>
+    <!-- Home Section Start -->
+            <section id="home">
+                <div id="txt-content">
+                    <h3> Hello,I'm <span id="name">Mohan</span></h3>
+                    <h2>And I'm a <span id="typing"></span></h2>
+                    <p>Python Developer specializing in Django-based backend development and database-driven applications, with experience integrating HTML, CSS, JavaScript, and SQL.</p>
+                    <a href="#contact" class="h-me">Hire me</a>
+                    <a href="resume/Mohan_Resume.pdf" class="h-me-r" download>Download resume</a>
+                </div>
+                <div class="img-frame">
+                    <img src="./img/img.png" alt="">
+                    <span></span>
+                </div>
+            </section>
+            <br>
+    <!-- Home Section End -->
+    <!-- Services Section Start -->
+            <section id="services">
+                <h1>What I Do</h1>
+                <div id="grid-container">
+                    <div class="items item-1">
+                        <h3>Web Development</h3>
+                        <ul>
+                            <li>Develop user-friendly interfaces with responsive designs.</li>
+                            <li>Ensure excellent UI/UX through clean layouts.</li>
+                            <li>Maintain cross-browser compatibility & performance.</li>
+                        </ul>
+                    </div>
+                    <div class="items item-2">
+                        <h3>Frontend Framework(ReactJS)</h3>
+                        <ul>
+                            <li>Build fast and scalable single-page applications using React.js.</li>
+                            <li>Create reusable components for efficient development.</li>
+                            <li>Manage application state effectively.</li>
+                        </ul>
+                    </div>
+                    <div class="items item-3">
+                        <h3>Backend Development</h3>
+                        <ul>
+                            <li>Develop secure and high-performance backend applications using Python.</li>
+                            <li>Create scalable APIs and server-side logic.</li>
+                            <li>Optimize performance and handle backend workflows.</li>
+                        </ul>
+
+                    </div>
+                    <div class="items item-4">
+                        <h3>Database Design & Integration</h3>
+                        <ul>
+                            <li>Design and manage structured databases for applications.</li>
+                            <li>Ensure data security, validation, and integrity.</li>
+                            <li>Optimize queries for better performance.</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </section>
+    <!-- Services Section End -->
+
+    <!-- Skills Section Start -->
+            <section id="skills">
+                    <h1>Skills</h1>
+                    <p>I speclalize in the following areas</p>
+                <div class="circle-container">
+                    <div class="center-skill">
+                        <img class="react" src="./img/React.svg" alt="">
+                    </div>
+                        <img class="orbit html"  src="./img/HTML5.svg" alt="">
+                        <img class="orbit css" src="./img/CSS3.svg" alt="">
+                        <img class="orbit js" src="./img/JavaScript.svg" alt="">
+                        <img class="orbit django" src="./img/Django.svg" alt="">
+                        <img class="orbit python" src="./img/Python.svg" alt="">
+                        <img class="orbit sql" src="./img/SQL Developer.svg" alt="">
+                        <img class="orbit mssql" src="./img/Microsoft SQL Server.svg" alt="">
+                        <img class="orbit git" src="./img/Git.svg" alt="">
+                </div>
+            </section>
+
+            <section id="projects">
+                <h1>Projects</h1>
+                <div class="grid-cont">
+                    <div class="project-items">
+                        <img src="./img/Content_Canvas.png" alt="">
+                        <a href="https://mohanguna.pythonanywhere.com/" target="_blank"><h3>Content Canvas-article</h3></a>
+                        <div class="tech-stack">
+                        <h4 class="phtml">HTML</h4>
+                        <h4 class="pcss">CSS</h4>
+                        <h4 class="pjs">JS</h4>
+                        <h4 class="ppython">Python</h4>
+                        <h4 class="pdjango">Django</h4>
+                        </div>
+                        <p>A Django-based content delivery platform featuring REST API integration for dynamic data consumption and real-time updates. Emphasizes backend efficiency, modular architecture, and responsive front-end rendering to support scalable, full-stack web applications.</p>
+                    </div>
+                    <div class="project-items">
+                        <img src="./img/ToDo App.png" alt="">
+                        <h3>ToDo-App(To-Do List Tracker)</h3>
+                        <div class="tech-stack">
+                        <h4 class="phtml">HTML</h4>
+                        <h4 class="pcss">CSS</h4>
+                        <h4 class="pjs">JS</h4>
+                        <h4 class="ppython">Python</h4>
+                        <h4 class="pdjango">Django</h4>
+                        </div>
+                        <p>A full-stack task management application implementing secure user authentication, database-driven CRUD operations, and clean backend logic using Django. Designed to demonstrate scalable data modeling, server-side validation, and seamless UI–backend integration.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h1>Contact</h1>
+                <form action="" id="contact-form">
+                    <input type="text" name="name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" placeholder="Your message"></textarea>
+                    <button id="cont-btn">Send Message</button>
+                </form>
+            </section>
+        </div>
+
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
