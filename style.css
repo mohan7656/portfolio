@@ -394,8 +394,8 @@ main{
 /* ===== Circle Container ===== */
 .circle-container{
     position:relative;
-    width:420px;
-    height:420px;
+    width:400px;
+    height:400px;
 }
 
 /* Orbit Ring */
@@ -403,8 +403,8 @@ main{
     content:"";
     position:absolute;
     inset:10px;
-    /*border:2px solid rgba(255,255,255,0.6);
-    */border-radius:50%;
+    /*border:2px solid rgba(255,255,255,0.6);*/
+    border-radius:50%;
 }
 
 .circle-container{
@@ -693,7 +693,8 @@ to{
     margin-bottom: 1em;
     border: 2px solid grey;
     padding: 3em;
-    width: 400px;
+    width: 99%;
+    height: auto;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -724,8 +725,6 @@ to{
 
 
 @media (max-width: 475px) {
-
-    /* ================= GLOBAL ================= */
     html, body {
         overflow-x: hidden;
     }
@@ -738,13 +737,12 @@ to{
         width: 100%;
     }
 
-    /* ================= NAVBAR ================= */
 
     #Main{
         display: flex;
     }
     #nav-bar {
-        position: fixed;   /* CRITICAL FIX */
+        position: fixed;
         top: 0;
         left: 0;
         right: 0;
@@ -774,7 +772,6 @@ to{
         font-size: 16px;
     }
 
-    /* ================= HOME ================= */
     #home {
         flex-direction: column;
         align-items: center;
@@ -814,7 +811,6 @@ to{
         margin: 10px 6px 0 0;
     }
 
-    /* ================= IMAGE ================= */
     .img-frame {
         padding: 20px;
         margin-top: 60px;
@@ -839,7 +835,6 @@ to{
     -webkit-animation: drawBottom 2s ease forwards;
     }
 
-    /* ================= SERVICES ================= */
     #services {
         width: 80%;
         height: auto;
@@ -862,7 +857,6 @@ to{
         margin: 0;
     }
 
-    /* ================= SKILLS ================= */
     #skills {
         padding: 50px 16px;
         margin: 20px 40px;
@@ -878,33 +872,27 @@ to{
     }
 
     .circle-container {
-        width: 240px;
-        height: 240px;
+        width: 150px;
+        height: 150px;
     }
 
     .center-skill img {
-        width: 70px;
+        width: 60px;
     }
 
     .orbit {
-        width: 36px;
-        transform: rotate(var(--angle)) translateX(100px);
-        -webkit-transform: rotate(var(--angle)) translateX(100px);
-        -moz-transform: rotate(var(--angle)) translateX(100px);
-        -ms-transform: rotate(var(--angle)) translateX(100px);
-        -o-transform: rotate(var(--angle)) translateX(100px);
+        width: 3px;
+        transform: rotate(var(--angle)) translateX(65px);
+        -webkit-transform: rotate(var(--angle)) translateX(65px);
+        -moz-transform: rotate(var(--angle)) translateX(65px);
+        -ms-transform: rotate(var(--angle)) translateX(65px);
+        -o-transform: rotate(var(--angle)) translateX(65px);
 }
-
-    /* ================= PROJECTS ================= */
-    #projects {
-        padding: 40px 16px;
-        margin: 30px;
-    }
 
 
     #projects h1 {
         margin-top: 4em;
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     .grid-cont {
@@ -913,14 +901,13 @@ to{
     }
 
     .project-items h3 {
-        font-size: 1.4em;
+        font-size: 1em;
     }
 
     .project-items p {
         font-size: 14px;
     }
 
-    /* ================= CONTACT ================= */
     #contact {
         padding: 40px 16px;
     }
@@ -931,13 +918,14 @@ to{
     }
 
     #contact-form {
-        width: 100%;
+        width: 200px;
         padding: 1.8em;
     }
 
     #contact input,
     #contact textarea {
-        font-size: 14px;
+        /* font-size: 14px; */
+        width: 100%;
     }
 
     #cont-btn {
@@ -945,3 +933,4 @@ to{
         font-size: 14px;
     }
 }
+
