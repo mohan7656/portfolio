@@ -5,19 +5,14 @@
     scroll-behavior: smooth;
 }
 
-main{
-    /* background-color: black; */
-    /* height: 100vh; */
-    width: 100vw;
-    /* position: relative; */
-}
-
 #main-container{
     height: 100%;
     background-color: black;
 }
 
-
+body{
+    cursor: url(./logo/pngwing.com.png),auto;
+}
 
 #nav-bar{
     display: flex;
@@ -123,12 +118,12 @@ main{
     font-size: 40px;
 }
 
-#txt-content>h3+h2{
+#txt-content>h2{
     font-size: 60px;
     margin-top: .3em;
 }
 
-#txt-content>h3+h2+p{
+#txt-content>p{
     font-size: 20px;
     margin-top: 1em;
     /* padding-right: 2em; */
@@ -155,7 +150,7 @@ main{
     animation-delay: .1s;
     animation-iteration-count: 1;
     z-index: 2;
-    opacity: 80%;
+    opacity: 100%;
     transition: 1s;
     -webkit-transition: 1s;
     -moz-transition: 1s;
@@ -398,18 +393,9 @@ main{
     height:400px;
 }
 
-/* Orbit Ring */
-.circle-container::before{
-    content:"";
-    position:absolute;
-    inset:10px;
-    /*border:2px solid rgba(255,255,255,0.6);*/
-    border-radius:50%;
-}
-
 .circle-container{
-        animation: rotate 20s linear infinite;
-    -webkit-animation: rotate 20s linear infinite;
+        animation: rotate 15s linear infinite;
+        -webkit-animation: rotate 15s linear infinite;
 }
 
 .circle-container:hover{
@@ -431,6 +417,10 @@ main{
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+    -moz-transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    -o-transform:translate(-50%,-50%);
 }
 
 .center-skill img{
@@ -541,7 +531,7 @@ to{
 
 .grid-cont{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     gap: 2em;
     max-width: 1200px;
     margin: 0 auto;
@@ -549,6 +539,7 @@ to{
 
 .project-items img{
     width: 100%;
+    min-height: 150px;
     max-height: 180px;
     object-fit: cover;
     border-radius: 5px;
@@ -562,7 +553,6 @@ to{
     font-size: 1.8em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
-    /* color: aqua; */
     margin: .5em 0;
 }
 
@@ -723,6 +713,12 @@ to{
     cursor: pointer;
 }
 
+#copy-rights-cont{
+    display: flex;
+    color: grey;
+    margin-top: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
 @media (max-width: 475px) {
     html, body {
@@ -736,7 +732,6 @@ to{
     #main-container {
         width: 100%;
     }
-
 
     #Main{
         display: flex;
@@ -787,20 +782,24 @@ to{
         padding: 0 16px;
     }
 
-    #txt-content h3 {
-        font-size: 30px;
+    #txt-content h3{
+        font-size: 1.4em;
     }
 
-    #txt-content h2 {
-        font-size: 32px;
+    #txt-content h2{
+        font-size: 45px;
     }
 
     #txt-content p {
-        font-size: 1px;
-        width: 100%;
+        font-size: 18px;
+        width: 90%;
         margin: auto;
         margin-bottom: 20px;
         line-height: 1.6;
+    }
+
+    #txt-content a {
+        padding: 8px;
     }
 
     .h-me,
@@ -874,14 +873,14 @@ to{
     .circle-container {
         width: 150px;
         height: 150px;
-    }
+}
 
     .center-skill img {
-        width: 60px;
+        width: 70px;
     }
 
     .orbit {
-        width: 3px;
+        width: 50px;
         transform: rotate(var(--angle)) translateX(65px);
         -webkit-transform: rotate(var(--angle)) translateX(65px);
         -moz-transform: rotate(var(--angle)) translateX(65px);
@@ -889,6 +888,14 @@ to{
         -o-transform: rotate(var(--angle)) translateX(65px);
 }
 
+.html   { --angle:   0deg; }
+.css    { --angle:  45deg; }
+.js     { --angle:  90deg; }
+.django { --angle: 135deg; }
+.python  { --angle: 180deg; }
+.sql    { --angle: 225deg; }
+.mssql  { --angle: 270deg; }
+.git    { --angle: 315deg; }
 
     #projects h1 {
         margin-top: 4em;
@@ -901,11 +908,11 @@ to{
     }
 
     .project-items h3 {
-        font-size: 1em;
+        font-size: .8em;
     }
 
     .project-items p {
-        font-size: 14px;
+        font-size: 80%;
     }
 
     #contact {

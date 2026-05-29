@@ -14,7 +14,6 @@
                         <div id="nav-logo">
                             <img src="./logo/M-logo.png" alt="">
                         </div>
-
                         <ul id="nav-links">
                             <li><a href="#main">Home</a></li>
                             <li><a href="#services">What I Do</a></li>
@@ -34,7 +33,7 @@
                     <a href="resume/Mohan_Resume.pdf" class="h-me-r" download>Download resume</a>
                 </div>
                 <div class="img-frame">
-                    <img src="./img/img.png" alt="">
+                    <img src="./img/img.png" alt="" loading="lazy">
                     <span></span>
                 </div>
             </section>
@@ -88,16 +87,18 @@
                     <p>I speclalize in the following areas</p>
                 <div class="circle-container">
                     <div class="center-skill">
-                        <img class="react" src="./img/React.svg" alt="">
+                        <img class="react" src="./img/React.svg" alt="" loading="lazy">
                     </div>
-                        <img class="orbit html"  src="./img/HTML5.svg" alt="">
-                        <img class="orbit css" src="./img/CSS3.svg" alt="">
-                        <img class="orbit js" src="./img/JavaScript.svg" alt="">
-                        <img class="orbit django" src="./img/Django.svg" alt="">
-                        <img class="orbit python" src="./img/Python.svg" alt="">
-                        <img class="orbit sql" src="./img/SQL Developer.svg" alt="">
-                        <img class="orbit mssql" src="./img/Microsoft SQL Server.svg" alt="">
-                        <img class="orbit git" src="./img/Git.svg" alt="">
+                    <div id="skill-img">
+                        <img class="orbit html"  src="./img/HTML5.svg" alt="" loading="lazy">
+                        <img class="orbit css" src="./img/CSS3.svg" alt="" loading="lazy">
+                        <img class="orbit js" src="./img/JavaScript.svg" alt="" loading="lazy">
+                        <img class="orbit django" src="./img/Django.svg" alt="" loading="lazy">
+                        <img class="orbit python" src="./img/Python.svg" alt="" loading="lazy">
+                        <img class="orbit sql" src="./img/SQL Developer.svg" alt="" loading="lazy">
+                        <img class="orbit mssql" src="./img/Microsoft SQL Server.svg" alt="" loading="lazy">
+                        <img class="orbit git" src="./img/Git.svg" alt="" loading="lazy">
+                    </div>
                 </div>
             </section>
 
@@ -105,7 +106,7 @@
                 <h1>Projects</h1>
                 <div class="grid-cont">
                     <div class="project-items">
-                        <img src="./img/Content_Canvas.png" alt="">
+                        <img src="./img/Content_Canvas.png" alt="" loading="lazy">
                         <a href="https://mohanguna.pythonanywhere.com/" target="_blank"><h3>Content Canvas-article</h3></a>
                         <div class="tech-stack">
                         <h4 class="phtml">HTML</h4>
@@ -117,7 +118,7 @@
                         <p>A Django-based content delivery platform featuring REST API integration for dynamic data consumption and real-time updates. Emphasizes backend efficiency, modular architecture, and responsive front-end rendering to support scalable, full-stack web applications.</p>
                     </div>
                     <div class="project-items">
-                        <img src="./img/ToDo App.png" alt="">
+                        <img src="./img/ToDo App.png" alt="" loading="lazy">
                         <h3>ToDo-App(To-Do List Tracker)</h3>
                         <div class="tech-stack">
                         <h4 class="phtml">HTML</h4>
@@ -134,12 +135,15 @@
             <section id="contact">
                 <h1>Contact</h1>
                 <form action="" id="contact-form">
-                    <input id="name" type="text" name="name" placeholder="Your name" required>
-                    <input id="email" type="email" name="email" placeholder="Your email" required>
+                    <input id="name" type="text" name="name" placeholder="name" required>
+                    <input id="email" type="email" name="email" placeholder="email" required>
                     <input id="subject" type="text" name="subject" placeholder="Subject" required>
-                    <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                    <textarea id="message" name="message" placeholder="message" required></textarea>
                     <button id="cont-btn">Send Message</button>
                 </form>
+                <div id="copy-rights-cont">
+                    <h4>Copyrights © 2026 Mohan All rights Reserved.</h3>
+                </div>
             </section>
         </div>
     </main>

@@ -11,7 +11,7 @@ let typingEffect=()=>{
     if(!isDeleting){
         myh1.innerHTML=currentSkill.slice(0,charIndex+1)
         myh1.style.color="aqua";
-        // myh1.style.filter="drop-shadow(0 0 1px aqua)"
+        myh1.style.filter="drop-shadow(0 0 5px grey)";
         charIndex++;
 
         if(charIndex===currentSkill.length){
@@ -24,7 +24,6 @@ let typingEffect=()=>{
         if(charIndex===0){
             isDeleting=false;
             skillIndex=(skillIndex+1)% skills.length;
-        myh1.style.filter="drop-shadow(0 0 0px aqua)";
 
         }
     }
