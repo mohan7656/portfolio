@@ -939,5 +939,10 @@ to{
         height: 45px;
         font-size: 14px;
     }
+    #copy-rights-cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
