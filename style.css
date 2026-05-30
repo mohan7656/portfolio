@@ -389,7 +389,7 @@ body{
 /* ===== Circle Container ===== */
 .circle-container{
     position:relative;
-    width:400px;
+    width:40%;
     height:400px;
 }
 
@@ -563,7 +563,7 @@ to{
 
 .tech-stack{
     display: flex;
-    gap: 20px;
+    gap: 10%;
     margin: 1em 0;
 }
 
@@ -871,16 +871,16 @@ to{
     }
 
     .circle-container {
-        width: 150px;
-        height: 150px;
+        width: 300px;
+        height: 300px;
 }
 
     .center-skill img {
-        width: 70px;
+        width: 50%;
     }
 
     .orbit {
-        width: 50px;
+        width: clamp(20px, 10vw, 50px);
         transform: rotate(var(--angle)) translateX(65px);
         -webkit-transform: rotate(var(--angle)) translateX(65px);
         -moz-transform: rotate(var(--angle)) translateX(65px);
@@ -889,13 +889,48 @@ to{
 }
 
 .html   { --angle:   0deg; }
-.css    { --angle:  45deg; }
-.js     { --angle:  90deg; }
-.django { --angle: 135deg; }
-.python  { --angle: 180deg; }
-.sql    { --angle: 225deg; }
-.mssql  { --angle: 270deg; }
-.git    { --angle: 315deg; }
+.css    { --angle:  55deg; }
+.js     { --angle:  105deg; }
+.django { --angle: 165deg; }
+.python  { --angle: 215deg; }
+.sql    { --angle: 265deg; }
+.mssql  { --angle: 3150deg; }
+.git    { --angle: 365deg; }
+
+
+.html{
+    top: 70%;
+    left: 33%;
+}
+.css{
+    top: 45%;
+    left: 33%;
+}
+.js{
+    top: 40%;
+    /* left: 0%; */
+    width: 10%;
+}
+.django{
+    top: 55%;
+    left: 70%;
+}
+.python{
+    top: 75%;
+    left: 55%;
+}
+.sql{
+    top: 73%;
+    left: 30%;
+}
+.mssql{
+    top: 65%;
+    left: 60%;
+}
+.git{
+    top: 26%;
+    left: 36%;
+}
 
     #projects h1 {
         margin-top: 4em;
@@ -908,12 +943,20 @@ to{
     }
 
     .project-items h3 {
-        font-size: .8em;
+        font-size: .7em;
     }
 
     .project-items p {
         font-size: 80%;
     }
+    .tech-stack{
+    display: flex;
+    gap: 3%;
+    margin: 1em 0;
+}
+.project-items img{
+    width: 100%;
+}
 
     #contact {
         padding: 40px 16px;
@@ -940,9 +983,7 @@ to{
         font-size: 14px;
     }
     #copy-rights-cont{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        text-align: center;
     }
 }
 
